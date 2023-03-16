@@ -1,0 +1,213 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: rgb(239, 221, 255);
+}
+
+.header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 30pt;
+    background-color: rgb(239, 221, 255);
+}
+
+.wrap {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    top: 20;
+    left: 0;
+    background-color: rgb(239, 221, 255);
+
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.face, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.face {
+    background-color: rgb(166, 153, 254);
+    display: flex;
+    flex-direction: column;
+}
+
+.face div {
+    font-size: 16pt;
+}
+
+.back {
+    background-color: rgb(254, 165, 153);
+    transform: rotateY(180deg);
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.back div {
+    padding: 15% 8% 0;
+    text-align: justify;
+}
+
+/* .back span {
+    padding: 20px;
+    text-align: justify;
+} */
+
+.card:hover .face {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 auto 20% auto;
+    display: block;
+}
+
+/********************************************************/
+
+input.button1 {
+    position: relative;
+    margin: 0 auto 20% auto;
+    display: block;
+    font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(245,245,245);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    text-decoration: none;
+    user-select: none;
+    padding: .3em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: rgb(166, 153, 254) linear-gradient(rgb(196, 188, 252), rgb(166, 153, 254));
+    box-shadow: inset rgb(166, 153, 254) 0 -1px 1px, inset 0 1px 1px rgb(189, 179, 252), rgb(145, 129, 255) 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+  }
+  input.button1:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  input.button1:active {
+    top: 1px;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+  }
+  @-webkit-keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+  @keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  }
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0,0,0,0.4);
+}
+
+.modal form {
+background-color: #fefefe;
+margin: 2% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+max-width: 600px;
+}
+
+.modal h3 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.modal p {
+margin: 0;
+}
+
+.modal label {
+display: block;
+margin-bottom: 10px;
+}
+
+.modal input[type="submit"] {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+margin-top: 10px;
+cursor: pointer;
+}
+
+.modal input[type="submit"]:hover {
+background-color: #45a049;
+}
+
+.modal input[type="radio"] {
+margin-right: 10px;
+}
+
+#quiz-form {
+    display: none;
+}
+
+#quiz-form2 {
+    display: none;
+}
+
+#quiz-form3 {
+    display: none;
+}
+
+#quiz-form4 {
+    display: none;
+}
+
+#quiz-form5 {
+    display: none;
+}
+
+.mark {
+    color: rgb(255, 97, 97);
+}

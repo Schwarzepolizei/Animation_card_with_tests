@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header">БЕСПЛАТНЫЕ ТЕСТЫ</div>
+    </header>
+  
+        <div class="wrap">
+                <div class="card">
+                    <div class="face">
+                        <div>История</div>
+                    </div>
+                    <div class="back">
+                        <div><span>Тест содержит 3 задания для проверки знаний по истории россии</span></div>
+                        <div><span class="mark">9 баллов</span></div>
+                        <div class="button">
+                            <input type="button" class="button1" id="button1" value="Тест">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face">
+                        <div>География</div>
+                    </div>
+                    <div class="back">
+                        <div><span>Вы можете проверить свои знания по географии. Вам будут представлены тесты из различных разделов географии.</span></div>
+                        <div><span class="mark">8 баллов</span></div>
+                        <div class="button">
+                            <input type="button" class="button1" id="button2" value="Тест">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face">
+                        <div>Физика</div>
+                    </div>
+                    <div class="back">
+                        <div><span>Тесты по физике онлайн помогут вам определить уровень ваших знаний по этому непростому предмету</span></div>
+                        <div><span class="mark">7 баллов</span></div>
+                        <div class="button">
+                            <input type="button" class="button1" id="button3" value="Тест">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face">
+                        <div>Химия</div>
+                    </div>
+                    <div class="back">
+                        <div><span>Без регистрации и бесплатно пройти тестирование по химии</span></div>
+                        <div><span class="mark">6 баллов</span></div>
+                        <div class="button">
+                            <input type="button" class="button1" id="button4" value="Тест">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face">
+                        <div>Литература</div>
+                    </div>
+                    <div class="back">
+                        <div><span>Помните ли вы книжки из детства? Проверьте себя и погрузитесь снова в приключения</span></div>
+                        <div><span class="mark">5 баллов</span></div>
+                        <div class="button">
+                            <input type="button" class="button1" id="button5" value="Тест">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal" class="modal">
+                <form id="quiz-form">
+                    <h3>Тест по истории</h3>
+                    <p>1. В каком году произошла Великая Французская Революция?</p>
+                    <label><input type="radio" name="q1" value="a"> 1789</label><br>
+                    <label><input type="radio" name="q1" value="b"> 1917</label><br>
+                    <label><input type="radio" name="q1" value="c"> 1812</label><br>
+                    <p>2. Кто был первым президентом США?</p>
+                    <label><input type="radio" name="q2" value="a"> Джордж Вашингтон</label><br>
+                    <label><input type="radio" name="q2" value="b"> Авраам Линкольн</label><br>
+                    <label><input type="radio" name="q2" value="c"> Томас Джефферсон</label><br>
+                    <p>3. Какая страна первой запустила искусственный спутник Земли?</p>
+                    <label><input type="radio" name="q3" value="a"> СССР</label><br>
+                    <label><input type="radio" name="q3" value="b"> США</label><br>
+                    <label><input type="radio" name="q3" value="c"> Китай</label><br>
+                    <input type="submit" value="Отправить">
+                </form>
+
+                <form id="quiz-form2">
+                    <h3>Тест по географии</h3>
+                    <p>1. Как называется место, где река впадает в другую реку, море или озеро?</p>
+                    <label><input type="radio" name="q1" value="a"> Исток</label><br>
+                    <label><input type="radio" name="q1" value="b"> Русло</label><br>
+                    <label><input type="radio" name="q1" value="c"> Половодье</label><br>
+                    <p>2. На флаге какой страны изображён кедр?</p>
+                    <label><input type="radio" name="q2" value="a"> Ливия</label><br>
+                    <label><input type="radio" name="q2" value="b"> Ливан</label><br>
+                    <label><input type="radio" name="q2" value="c"> Боливия</label><br>
+                    <p>3. Назовите страну — родину шёлка, фарфора и бумаги.</p>
+                    <label><input type="radio" name="q3" value="a"> Кипр</label><br>
+                    <label><input type="radio" name="q3" value="b"> Куба</label><br>
+                    <label><input type="radio" name="q3" value="c"> Китай</label><br>
+                    <input type="submit" value="Отправить">
+                </form>
+
+                <form id="quiz-form3">
+                    <h3>Тест по физике</h3>
+                    <p>1. Какое уравнение является основным уравнением нерелятивистской квантовой механики?</p>
+                    <label><input type="radio" name="q1" value="a"> Уравнение Лагранжа</label><br>
+                    <label><input type="radio" name="q1" value="b"> Уравнение Эйнштейна</label><br>
+                    <label><input type="radio" name="q1" value="c"> Уравнение Шредингера</label><br>
+                    <p>2. Сколько молей содержится в 1 литре воды?</p>
+                    <label><input type="radio" name="q2" value="a"> 25</label><br>
+                    <label><input type="radio" name="q2" value="b"> 55</label><br>
+                    <label><input type="radio" name="q2" value="c"> 75</label><br>
+                    <p>3. В каком опыте определялся заряд электрона?</p>
+                    <label><input type="radio" name="q3" value="a"> Опыт Милликена</label><br>
+                    <label><input type="radio" name="q3" value="b"> Опыт Штерна</label><br>
+                    <label><input type="radio" name="q3" value="c"> Опыт Столетова</label><br>
+                    <input type="submit" value="Отправить">
+                </form>
+
+                <form id="quiz-form4">
+                    <h3>Тест по химии</h3>
+                    <p>1. Метан используют как сырье в процессах:</p>
+                    <label><input type="radio" name="q1" value="a"> Окисления</label><br>
+                    <label><input type="radio" name="q1" value="b"> Восстановления</label><br>
+                    <label><input type="radio" name="q1" value="c"> Полимеризации</label><br>
+                    <p>2. Укажите общую молекулярную формулу гомологческого ряда алканов:</p>
+                    <label><input type="radio" name="q2" value="a"> Сu H2n+ 2</label><br>
+                    <label><input type="radio" name="q2" value="b"> Сu H2n – 2бб</label><br>
+                    <label><input type="radio" name="q2" value="c"> Сu H2n – 4.</label><br>
+                    <p>3. Характерной реакцией у метана является:</p>
+                    <label><input type="radio" name="q3" value="a"> Замещения</label><br>
+                    <label><input type="radio" name="q3" value="b"> Присоединения</label><br>
+                    <label><input type="radio" name="q3" value="c"> Обмена</label><br>
+                    <input type="submit" value="Отправить">
+                </form>
+
+                <form id="quiz-form5">
+                    <h3>Тест по литературе</h3>
+                    <p>1. Чьему авторству принадлежит рассказ «Муму»?</p>
+                    <label><input type="radio" name="q1" value="a"> И.С. Тургенев</label><br>
+                    <label><input type="radio" name="q1" value="b"> И.А. Бунин</label><br>
+                    <label><input type="radio" name="q1" value="c"> Н.В. Гоголь</label><br>
+                    <p>2. Выберете произведение, которое относится к творчеству А.С. Пушкина?</p>
+                    <label><input type="radio" name="q2" value="a"> "Руслан и Людмила"</label><br>
+                    <label><input type="radio" name="q2" value="b"> "Бородино"</label><br>
+                    <label><input type="radio" name="q2" value="c"> "Соловьи"</label><br>
+                    <p>3. Выберете произведение, автором которого НЕ является М.Ю. Лермонтов:</p>
+                    <label><input type="radio" name="q3" value="a"> "Черемуха"</label><br>
+                    <label><input type="radio" name="q3" value="b"> "Парус"</label><br>
+                    <label><input type="radio" name="q3" value="c"> "Бородино"</label><br>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
